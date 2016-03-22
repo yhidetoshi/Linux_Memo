@@ -30,8 +30,11 @@
 
 - mount( `mount [option…] device directory` ) 
   - (ex) mount -t <original_mount_dir> <target_mount_dir>
+  - (ex) CD-ROMをマウント : `# mount -r -t iso9660 /dev/cdrom /mnt/cdrom`
   -  オプション
-    - タイプを指定(-t) `# mount -t`  
+    - タイプを指定(-t) : `# mount -t`  
+    - 読み込み専用マウント : `# mount -r`
+    - 
   
   - 主なファイルシステム・タイプ
     - ext2 : `Linux標準のファイルシステム`
