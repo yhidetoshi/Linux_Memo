@@ -28,10 +28,22 @@
   - 容量表示(適当) : `# df -h`
   - 容量表示(K byte) : `# df -k`
 
+- mount( `mount [option…] device directory` ) 
+  - (ex) mount -t <original_mount_dir> <target_mount_dir>
+  -  オプション
+    - タイプを指定(-t) `# mount -t`  
+  
+  - 主なファイルシステム・タイプ
+    - ext2 : `Linux標準のファイルシステム`
+    - ext3 : `ext2にジャーナリング機能を付加したファイルシステム`
+    - xfs : `ジャーナリング機能を持ったファイルシステム`
+    - iso9660 : `一般的なCD-ROMの形式`
+    - udf : `主にDVDに使用`
+    - nfs : `ネットワークファイルシステム`
+    - samba : `Windowsのネットワーク共有ファイルシステム`
 
-
-- mount
-
+※ ジャーナリング
+ - ファイル処理中に何らかの障害が発生した場合に短時間で復旧できるような手がかり（ログ）を残すファイル管理手法
 
 #### Network周り
 ====
