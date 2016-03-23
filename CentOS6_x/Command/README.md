@@ -68,3 +68,8 @@
 #### パーミッション周り
 ====
 
+
+#### sedコマンド
+
+  - repoの無効化 : `sed -i -e "s/enabled *= *1/enabled=0/g" /etc/yum.repos.d/epel.repo`
+
