@@ -63,6 +63,7 @@
 
 #### Network周り
 ====
+- network再起動 : `service network restart`
 
 
 #### パーミッション周り
