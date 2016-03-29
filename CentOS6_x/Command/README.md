@@ -2,13 +2,12 @@
 #### プロセス周り
 ====
 
-
 |コマンド    |機能         |
 |:-----------|:------------|
 |top|稼働中のプロセスをリアルタイム表示|
-|ps -ef | grep <ps_name>|プロセス確認|
-|kill -9 <ps_num>|プロセスを止める(通常)|
-|kill -KILL <ps_num>|プロセスを止める(強制)|
+|ps -ef grep &lt;ps_name&gt;|プロセス確認|
+|kill -9 &lt;ps_num&gt;|プロセスを止める(通常)|
+|kill -KILL &lt;ps_num&gt;|プロセスを止める(強制)|
 
 
 
@@ -18,12 +17,27 @@
 
 #### サービス周り
 ====
-- 起動/停止/再起動 : `# servie <service_name> start|stop|restart `
-- 自動起動登録/解除 : `# chkconfig <service_name> on | off`
+
+|コマンド    |機能         |
+|:-----------|:------------|
+|servie &lt;service_name&gt; start stop restart|起動,停止,再起動|
+|chkconfig &lt;service_name&gt; on|自動起動登録|
+|chkconfig &lt;service_name&gt; off|自動起動解除|
+|chkconfig --list &lt;service_name&gt;|自動起動確認|
 
 #### yumコマンド周り
 ====
-- install : `# yum install <package_name>`
+
+|コマンド    |機能         |
+|:-----------|:------------|
+|yum install &lt;package_name&gt; stop restart|起動/停止/再起動|
+|chkconfig &lt;service_name&gt; on|自動起動登録|
+|chkconfig &lt;service_name&gt; off|自動起動解除|
+|chkconfig --list &lt;service_name&gt;|自動起動確認|
+
+
+
+- install : `# `
 - uninstall : `# yum remove <package_name>`
 - install可能リスト : `# yum list <package_name>`
 - update確認 : `# yum check-update <package_name>`
