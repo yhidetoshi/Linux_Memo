@@ -10,14 +10,8 @@
 |kill -KILL &lt;ps_num&gt;|プロセスを止める(強制)|
 
 
-
-
-
-
-
 #### サービス周り
 ====
-
 |コマンド    |機能         |
 |:-----------|:------------|
 |servie &lt;service_name&gt; start &#124; stop &#124; restart|起動,停止,再起動|
@@ -42,13 +36,14 @@
 
 - 古いヘッダ削除 : `# `
 
-
 #### ディスク周り
 ====
-- dfコマンド
-  - ファイルシステムの情報表示 : `# df -a`
-  - 容量表示(適当) : `# df -h`
-  - 容量表示(K byte) : `# df -k`
+|コマンド    |機能         |
+|:-----------|:------------|
+|df -a|ファイルシステムの情報表示|
+|df -h|容量表示(適当)|
+|df -k|容量表示(K byte)|
+
 
 - mount( `mount [option…] device directory` ) 
   - (ex) mount -t <original_mount_dir> <target_mount_dir>
