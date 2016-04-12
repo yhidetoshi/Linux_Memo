@@ -1,4 +1,4 @@
-![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/centos-image.png)
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/vim-image.jpeg)
 
 
 #### Vimコマンド
