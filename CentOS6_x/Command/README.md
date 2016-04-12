@@ -1,7 +1,6 @@
 
 <a id="index"></a>
 ## <a href="#index">目次</a>
-* [目次](#index)
 * [プロセス周り](#anchor1)
 * [サービス周り](#anchor2)
 * [yumコマンド周り](#anchor3)
