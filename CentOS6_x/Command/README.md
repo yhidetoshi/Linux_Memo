@@ -7,8 +7,9 @@
 * [yumコマンド周り](#anchor3)
 * [ディスク周り] (#anchor4)
 * [Vimコマンド] (#anchor5)
-* 
-
+* [Network周り] (#anchor6)
+* [OpenSSLコマンド] (#anchor7)
+* [パーミッション] (#anchor8)
 
 <a id="anchor1"></a>
 #### <a href="#anchor1">プロセス周り</a>  
@@ -88,8 +89,8 @@
  - ファイル処理中に何らかの障害が発生した場合に短時間で復旧できるような手がかり（ログ）を残すファイル管理手法
 
 
-<a id="anchor4"></a>
-#### <a href="#anchor5">Vimコマンd</a>  
+<a id="anchor5"></a>
+#### <a href="#anchor5">Vimコマンド</a>  
 ====
 
 **[移動]**
@@ -163,12 +164,26 @@
 
 **[Vimのより詳しいコマンド説明]** -> http://route477.net/w/VimMemo.html
 
-#### Network周り
+<a id="anchor6"></a>
+#### <a href="#anchor6">Network周り</a>  
 ====
 - network再起動 : `service network restart`
 
 
-#### パーミッション周り
+<a id="anchor7"></a>
+#### <a href="#anchor7">OpenSSLコマンド</a> 
+- 任意の文字列をハッシュ化
+```
+openssl passwd -1 '<hash化したい文字列>
+```
+
+
+<a id="anchor8"></a>
+#### <a href="#anchor8">OpenSSLコマンド</a> 
+- 任意の文字列をハッシュ化
+```
+openssl passwd -1 '<hash化したい文字列>
+```
 ====
 
 
@@ -179,8 +194,4 @@
 
 
 
-#### Openssl
-- 任意の文字列をハッシュ化
-```
-openssl passwd -1 '<hash化したい文字列>
-```
+
