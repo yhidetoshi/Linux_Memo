@@ -1,4 +1,5 @@
-![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/linux-icon.png)
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/linux-icon2.png)
+
 # Linux_memo
 Linuxに関するメモ
  - CentOS
