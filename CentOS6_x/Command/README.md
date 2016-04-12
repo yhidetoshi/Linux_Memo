@@ -158,6 +158,8 @@
 |>>|インデントを増やす(insertモードのtabと同じ動作)|
 |<<|インデントを減らす(insertモードのtabと同じ動作)|
 
+**[Vimのより詳しいコマンド説明]** -> http://route477.net/w/VimMemo.html
+
 #### Openssl
 - 任意の文字列をハッシュ化
 ```
