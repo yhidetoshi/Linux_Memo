@@ -1,4 +1,4 @@
-![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/linux-icon.png)
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/centos-image.png)
 
 
 <a id="index"></a>
