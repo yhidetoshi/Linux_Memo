@@ -4,11 +4,15 @@
 * [目次](#index)
 * [プロセス周り](#anchor1)
 * [サービス周り](#anchor2)
+* [yumコマンド周り](#anchor3)
+* [ディスク周り] (#anchor4)
+* [Vimコマンド] (#anchor5)
+* 
+
 
 <a id="anchor1"></a>
 #### <a href="#anchor1">プロセス周り</a>  
 ====
-
 |コマンド    |機能         |
 |:-----------|:------------|
 |top|稼働中のプロセスをリアルタイム表示|
@@ -26,8 +30,9 @@
 |chkconfig &lt;service_name&gt; on &#124; off|自動起動登録/解除|
 |chkconfig --list &lt;service_name&gt;|自動起動確認|
 
-#### yumコマンド周り
-====
+
+<a id="anchor3"></a>
+#### <a href="#anchor3">yumコマンド周り</a>  
 
 |コマンド    |機能         |
 |:-----------|:------------|
@@ -39,7 +44,8 @@
 |yum clean &lt;package_name&gt;|古いヘッダ削除|
 
 
-#### ディスク周り
+<a id="anchor4"></a>
+#### <a href="#anchor3">ディスク周り</a>  
 ====
 |コマンド    |機能         |
 |:-----------|:------------|
@@ -81,21 +87,10 @@
 ※ ジャーナリング
  - ファイル処理中に何らかの障害が発生した場合に短時間で復旧できるような手がかり（ログ）を残すファイル管理手法
 
-#### Network周り
+
+<a id="anchor4"></a>
+#### <a href="#anchor5">Vimコマンd</a>  
 ====
-- network再起動 : `service network restart`
-
-
-#### パーミッション周り
-====
-
-
-#### sedコマンド
-
-  - repoの無効化 : `sed -i -e "s/enabled *= *1/enabled=0/g" /etc/yum.repos.d/epel.repo`
-
-
-#### vimコマンド
 
 **[移動]**
 
@@ -167,6 +162,22 @@
 |<<|インデントを減らす(insertモードのtabと同じ動作)|
 
 **[Vimのより詳しいコマンド説明]** -> http://route477.net/w/VimMemo.html
+
+#### Network周り
+====
+- network再起動 : `service network restart`
+
+
+#### パーミッション周り
+====
+
+
+#### sedコマンド
+
+  - repoの無効化 : `sed -i -e "s/enabled *= *1/enabled=0/g" /etc/yum.repos.d/epel.repo`
+
+
+
 
 #### Openssl
 - 任意の文字列をハッシュ化
