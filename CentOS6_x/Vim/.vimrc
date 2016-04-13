@@ -19,6 +19,6 @@ imap <C-j> <esc>
 set autoindent
 set expandtab
 set showmatch
-set smarttabset 
+set smarttab 
 set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
 set grepprg=grep\ -nh
