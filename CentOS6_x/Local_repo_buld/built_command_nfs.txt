@@ -1,0 +1,7 @@
+_作成したレポジトリをNFSで共有する_
+
+#chown -R nfsnobody:nfsnobody /var/www/html/yum-repo/
+#vim /etc/exports
+#/var/www/html/yum-repo 10.10.40.0/24(rw,all_squash,sync)
+#service nfs start
+#chkconfig nfs on
