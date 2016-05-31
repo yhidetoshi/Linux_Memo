@@ -27,6 +27,11 @@ deb http://security.debian.org/ jessie/updates main contrib non-free
 このコマンド以降、リポジトリの設定が反映されてapt-getでinstallできるよになる。
 ```
 
+- GNOMEをインストールする
+```
+# apt-get update
+# apt-get install task-gnome-desktop
+```
 
 
 
