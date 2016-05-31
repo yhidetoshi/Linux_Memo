@@ -1,5 +1,6 @@
 ![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/debian-image.png)
 
+環境:Debian8.4 64bit on VirtualBox
 
 
 - Debianのisoイメージの取得
