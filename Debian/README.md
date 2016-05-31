@@ -38,10 +38,16 @@ deb http://security.debian.org/ jessie/updates main contrib non-free
 
 - コマンドメモ
 ```
+### sshをインストールする
 # aptitude install ssh
 # systemctl {start | stop | restart } ssh
 
-- iptablesの再起動
+### iptablesの再起動
 # /etc/init.d/netfilter-persistent restart
+
+### Debianのバージョンを確認する
+# cat /etc/debian_version
+
 ```
+
 
