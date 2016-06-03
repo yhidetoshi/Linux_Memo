@@ -151,4 +151,12 @@ N 3
 |-c|実行中のシャットダウンをキャンセする|
 
 
+- 警告メッセージを出す
+```
+# shotdown -k now "please logout immidiately"
+```
 
+- 22時にシステムを停止する
+```
+# shutdown -h 22:00
+```
