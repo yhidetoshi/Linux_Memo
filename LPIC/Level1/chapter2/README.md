@@ -93,3 +93,6 @@ title CentOS (2.6.32-431.3.1.el6.x86_64)
   - `dpkg -s | --status` : パッケージ情報を表示する
 	 
 - **apt-getコマンド**
+  - パッケージ管理
+    - `/etc/apt/sources.list`
+  - `apt-get dist-upgrade` : 既存の構成と矛盾することになるパッケージはアップグレードしない
