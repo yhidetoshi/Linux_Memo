@@ -1,7 +1,34 @@
 #目次
 
-####    [Chapter1 システムアーキテクチャ](https://github.com/yhidetoshi/Network_Study/tree/master/NA-ver/chapter1/)
+####    [Chapter1 システムアーキテクチャ](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter1#chapter1-システムアーキテクチャ/)
 - **内容**
   - **ハードウェアの基本知識と設定**
   - **システムの起動**
   - **ランレベルとシャットダウン**
+
+
+####    [Chapter2 Linuxのインストールとパッケージ管理](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter1#chapter1-システムアーキテクチャ/)
+- **内容**
+  - **ハードウェアディスクのレイアウト設計**
+  - **ブートマネージャのインストール**
+  - **共有ライブラリ管理**
+  - **Debianパッケージの管理**
+  - **RPMパッケージの管理**
+
+####Linuxインストールに必要なパーティション
+
+- スワップ領域
+  - メモリサイズと同程度〜2倍程度のサイズを割り当てる
+- 用途が異なるディレクトリは別のパーティションを配置するようにする
+
+####ブートマネージャのインストール
+
+- ブートマネージャー
+  - **MBR(マスターブートレコード)**から起動プログラムを読み込む
+    - 第一段階のブローダ
+    - 第二段階のブローダ
+      - MBRのサイズが小さいために2段階に分けている
+  - 代表的なブローダ
+    - **GRUB**
+    - **LILO**
+
