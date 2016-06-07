@@ -7,7 +7,7 @@
   - **ランレベルとシャットダウン**
 
 
-####    [Chapter2 Linuxのインストールとパッケージ管理](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter1#chapter1-システムアーキテクチャ/)
+####    [Chapter2 Linuxのインストールとパッケージ管理](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter2#chapter2-linuxのインストールとパッケージ管理)
 - **内容**
   - **ハードウェアディスクのレイアウト設計**
   - **ブートマネージャのインストール**
