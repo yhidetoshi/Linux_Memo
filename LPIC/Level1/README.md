@@ -34,7 +34,7 @@
   - **プロセスの実行優先度**
   
   
-####    [Chapter5 デバイスとLinuxファイルシステム ](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter1#chapter1-システムアーキテクチャ/)
+####    [Chapter5 デバイスとLinuxファイルシステム ](https://github.com/yhidetoshi/Linux_Memo/blob/master/LPIC/Level1/chapter5/README.md#chapter5-デバイスとlinuxファイルシステム)
 - **内容**
   - **パーティションとファイルシステムの作成**
   - **ファイルシステムの管理**
