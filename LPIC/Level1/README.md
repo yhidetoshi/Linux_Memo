@@ -16,7 +16,7 @@
   - **RPMパッケージの管理**
 
 
-####    [Chapter3 GNU & UNIXコマンド ](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter1#chapter1-システムアーキテクチャ/)
+####    Chapter3 GNU & UNIXコマンド
 - **内容**
   - **コマンドライン操作**
   - **パイプとリダイレクトr**
@@ -24,7 +24,7 @@
   - **正規表現を使ったテキスト検索**
   - **viエディタ**
 
-####    [Chapter4 ファイルとプロセスの管理 ](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter1#chapter1-システムアーキテクチャ/)
+####    Chapter4 ファイルとプロセスの管理
 - **内容**
   - **基本的なファイル管理**
   - **パーミッションの設定**
