@@ -52,3 +52,9 @@
     
 ![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/disk-partition.png)
 
+
+**[rootファイルシステム]**
+
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/filesystem-root.png)
+
+
