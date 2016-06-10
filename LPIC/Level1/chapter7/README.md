@@ -80,3 +80,34 @@ drwxr-xr-x  18 root root  4096 Jun  1 09:54 letsencrypt
 |~/.profile|~/.bash_profileも~/.bash_loginもない場合、ログイン時に実行される|
 |~/.bashrc|bash起動時に実行される|
 |~/.bash_logout|ログアウト時に実行される|
+
+- シェルスクリプト
+```
+# cat lsld
+echo "Hoge huga"
+var="hhooggeee"
+echo ${var}
+
+# source lsld
+Hoge huga
+hhooggeee
+
+# . lsld
+Hoge huga
+hhooggeee
+```
+
+- **execコマンド**
+  - 起動しているプロセスが置きかわる
+  - (ex) `zsh`を起動するとき、zshだとzshが起動して元のbashシェルは待機になる
+  - (ex) `exec zsh`とすると、置きかわる(プロセスは待機せずにPIDが切り替わる)
+
+
+- スクリプトに渡す引数
+  - `0` : 正常終了
+  - `0以外` : エラー
+- testコマンド
+  - ファイルに関する情報を取得する 
+```
+
+```
