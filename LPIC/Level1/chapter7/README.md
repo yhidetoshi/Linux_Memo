@@ -134,4 +134,32 @@ if [ -f testscript ]; then
 fi
 ```
 
+**case文による条件分岐**
+```
+# cat casetest.sh
 
+case $1 in
+  1) echo "January" ;;
+  2) echo "February" ;;
+  3) echo "March" ;;
+  4) echo "April" ;;
+esac
+# sh ./casetest.sh 1
+January
+
+# sh ./casetest.sh 2
+February
+```
+**for文による**
+
+```
+# cat fortest.sh
+  for var in Redhat Ubuntu Debian
+  do
+      echo $var Linux
+  done
+[root@chef-client1 ~]# sh fortest.sh
+Redhat Linux
+Ubuntu Linux
+Debian Linux
+```
