@@ -42,3 +42,10 @@
   - **ディスククォータの管理**
   - **ファイルの配置と検索**
 
+
+####    [Chapter7 シェル、スクリプト、データ管理 ](https://github.com/yhidetoshi/Linux_Memo/blob/master/LPIC/Level1/chapter5/README.md#chapter5-デバイスとlinuxファイルシステム)
+- **内容**
+  - **シェル環境のカスタマイズ**
+  - **シェルスクリプト**
+  - **データベースとSQL**
+  
