@@ -108,6 +108,19 @@ hhooggeee
   - `0以外` : エラー
 - testコマンド
   - ファイルに関する情報を取得する 
-```
 
+```
+# cat iftest1.sh
+if test -f testscript
+then
+   source ./testscript
+else
+   echo "testscript file not exist"
+fi
+
+# sh iftest1.sh
+testscript file not exist
+
+# sh iftest1.sh
+#
 ```
