@@ -124,3 +124,14 @@ testscript file not exist
 # sh iftest1.sh
 #
 ```
+下記のように書き換えることができる
+```
+# cat iftest2.sh
+
+if [ -f testscript ]; then
+  . ./testscript
+  else echo "testscript file not exist"
+fi
+```
+
+
