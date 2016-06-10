@@ -41,3 +41,26 @@ ez_setup.py  get-pip.py
 |noglob|メタキャラクタを使ったファイル名を展開を向こうにする|
 |vi|vi風のキーバインドにする|
 
+
+- エイリアス機能
+  -  コマンドとオプションとひとまとめにしたり、新しいコマンドのようにしたり、一連のコマンドを簡単にする
+```
+# alias ls='ls -l'
+
+# ls
+total 24
+drwxr-xr-x.  6 root root  4096 Jun  1 10:02 CA
+-rw-r--r--   1 root root 10240 Jan 21  2011 ez_setup.py
+-rw-r--r--   1 root root   260 Jun  1 09:35 get-pip.py
+drwxr-xr-x  18 root root  4096 Jun  1 09:54 letsencrypt
+
+# alias lsless='ls -l | less'
+# lsless
+
+# unalias lsless
+# unalias ls
+```
+
+**(# alias lsless='ls -l | less')の結果**
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/ls-alias.png)
+
