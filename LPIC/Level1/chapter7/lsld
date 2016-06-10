@@ -1,0 +1,3 @@
+echo "Hoge huga"
+var="hhooggeee"
+echo ${var}
