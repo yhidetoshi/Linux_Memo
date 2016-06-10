@@ -158,8 +158,52 @@ February
   do
       echo $var Linux
   done
-[root@chef-client1 ~]# sh fortest.sh
+
+# sh fortest.sh
 Redhat Linux
 Ubuntu Linux
 Debian Linux
 ```
+
+**seq文**
+```
+# cat seqtest.sh
+for i in `seq 10 15`
+do
+  echo $i
+done
+[root@chef-client1 ~]# sh seqtest.sh
+10
+11
+12
+13
+14
+15
+```
+
+**while文**
+```
+# cat whiletest.sh
+i=1
+while [ $i -le 10 ]
+do
+  echo $i
+  let i=i+1
+done
+
+# sh whiletest.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+**read文**
+
+
