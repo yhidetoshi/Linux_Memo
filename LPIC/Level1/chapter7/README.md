@@ -64,3 +64,19 @@ drwxr-xr-x  18 root root  4096 Jun  1 09:54 letsencrypt
 **(# alias lsless='ls -l | less')の結果**
 ![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/ls-alias.png)
 
+
+- bashの設定ファイル
+  - シェルを起動するたびに、環境変数やエイリアス、関数などを定義するのは非効率なので、自動的に行う仕組み 
+  - 設定ファイルは以下の通り
+
+
+|ファイル|説明         |
+|:-----------|:------------|
+|/etc/profile|ログイン時に実行され、全ユーザから参照される|
+|/etc/bash.bashrc|bash起動時に実行され、全ユーザから参照される|
+|/etc/bashrc|~/.bashrcから参照される|
+|~/.bash_profile|ログイン時に実行される|
+|~/.bash_login|~/.bash_profileがない場合、ログイン時に実行される|
+|~/.profile|~/.bash_profileも~/.bash_loginもない場合、ログイン時に実行される|
+|~/.bashrc|bash起動時に実行される|
+|~/.bash_logout|ログアウト時に実行される|
