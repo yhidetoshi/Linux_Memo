@@ -205,5 +205,26 @@ done
 ```
 
 **read文**
+```
+# cat readtest.sh
+echo -n "who are you : "
+read username
+echo "hello $username"
 
+# sh readtest.sh
+-n who are you :
+hoge
+hello hoge
+```
 
+**シェルスクリプトの実行環境**
+
+下記の1行を書くと、スクリプトはbashシェルで実行されるようになる
+```
+#!/bin/bash
+```
+
+#####データベースとSQL
+
+下記にまとめているので、こっちを参照。
+https://github.com/yhidetoshi/SQL_Study_Basic
