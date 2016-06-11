@@ -43,7 +43,7 @@
   - **ファイルの配置と検索**
 
 
-####    [Chapter7 シェル、スクリプト、データ管理 ](https://github.com/yhidetoshi/Linux_Memo/blob/master/LPIC/Level1/chapter5/README.md#chapter5-デバイスとlinuxファイルシステム)
+####    [Chapter7 シェル、スクリプト、データ管理 ](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter7#chapter7-シェルスクリプトデータ管理-)
 - **内容**
   - **シェル環境のカスタマイズ**
   - **シェルスクリプト**
