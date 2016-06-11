@@ -50,7 +50,7 @@
   - **データベースとSQL**
   
 
-####    [ユーザインターフェースとデスクトップ](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter7#chapter7-シェルスクリプトデータ管理-)
+####    [Chapter8  ユーザインターフェースとデスクトップ](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter7#chapter7-シェルスクリプトデータ管理-)
 - **内容**
   - **Xのインストール**
   - **ディスプレイマネージャーとウィンドウマネージャー**
