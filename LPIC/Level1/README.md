@@ -57,3 +57,8 @@
   - **アクセシビリティ**
 
 
+####    [Chapter9  システム管理](https://github.com/yhidetoshi/Linux_Memo/blob/master/LPIC/Level1/chapter8/README.md#chapter8-ユーザインターフェースとデスクトップ)
+- **内容**
+  - **ユーザとグループ管理**
+  - **ジョブスケジューリング**
+  - **ローカライゼーションと国際化**
