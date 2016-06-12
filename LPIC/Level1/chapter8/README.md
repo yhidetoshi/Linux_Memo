@@ -85,3 +85,25 @@ initdefaultが記述されているところに下記を書く
 
 id:5:initdefault:
 ```
+
+- XDM(X Display Manager)
+  - **GDM**(Gnome Display Manager)
+    - GNOMEで利用される 
+  - **KDE**(KDE Display Manager) 
+  - 認証:**XDMCP** 
+ 
+  
+- デスクトップ環境
+  - 統合デスクトップ環境
+    - GNOME
+    - KDE
+    - Xfce(より軽量)
+  
+- アクセシビリティ
+  - 障害者にとって扱いやすいようにする機能
+  - GUI設定ツール**AccessX**
+  - スティッキーキー
+  - スローキー
+  - バウンスキー
+  - トグルキー
+  - マウスキー
