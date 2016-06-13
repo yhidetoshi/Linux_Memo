@@ -56,3 +56,17 @@ postgres:x:26:
 
 (例)
 `# useradd -c "Test User" -d /home/test -s /bin/bash testuser`
+
+
+- **usermodコマンド**
+  - 既存のユーザアカウントを変更する
+  - `useradd`コマンドと多くのオプションが共通している
+  - `usermod [option] ユーザ名`
+    - (ex) `# usermod -G hoge testuser`
+      - -gオプションだとプライマリグループが変更される
+      - -Gオプションだとプライマリー以外のグループが変更される
+
+- **userdelコマンド**
+  - `userdel [option] ユーザ名`
+  - `-r`オプションでホームディレクトリも同時に削除する
+  - (ex) `# userdel -r testuser`
