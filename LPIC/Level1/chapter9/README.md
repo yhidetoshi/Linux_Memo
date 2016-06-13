@@ -79,3 +79,22 @@ postgres:x:26:
 - **groupコマンド**
   - グループを指定してユーザを作成するときは、あらかじめグループを作成して、グループを作っておく
   - `# groupadd sales`
+
+- **groupmodコマンド**
+  - `groupmod グループ名`
+    - `-g GID` : GIDを変更する
+    - `-n グループ名` : グループ名を変更する
+
+- **groupdelコマンド**
+  - `groupdel グループ名`
+  - グループを削除
+
+- cron
+  - `crontab [option]`
+
+|option|説明         |
+|:-----------|:------------|
+|-e| エディタを使ってcrontabを編集する|
+|-l|crontabファイルの内容を表示する|
+|-r|crontabファイルを削除する|
+|-u ユーザ名|ユーザ名を指定してcrontabファイルを編集する(rootユーザのみ)|
