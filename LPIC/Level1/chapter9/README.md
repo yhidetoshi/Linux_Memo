@@ -182,6 +182,15 @@ af -f run_jobs 23:00
 $ iconv -f eucjp -t utf8 hoge.euc.txt > hoge.utf8.txt
 ```
 
+- タイムゾーン
+  - `/usr/share/zoneinfo`以下のバイナリファイルに格納されている
+  - タイムゾーンを日本にする場合
+    - `# cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime`
+    - `# ln -s /usr/share/zonefile/Asia/Tokyo /etc/localtime`
+    - **環境変数TZ**で設定することもできる
+    - `tzselectコマンド`：対話的に設定できる
+    - `# tzconfigコマンド`
+      - /etc/localtimeと/etc/timezoneの値をまとめて変更できる 
 
 
 
