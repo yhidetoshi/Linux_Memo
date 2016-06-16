@@ -37,3 +37,18 @@
 - システムクロックをハードウェアクロックにセットする
   - `hwcloc`コマンドを使う 
 
+[hwclocコマンドのオプション]
+
+|書式|説明         |
+|:-----------|:------------|
+|-r|ハードウェアクロックを表示する|
+|-w (--systohc)|システムクロックの時刻をハードウェアクロックに設定|
+|-s (--hctosys)|ハードウェアクロックの時刻をシステムクロックに設定|
+
+
+**NTP(Network Time Protocol)**
+
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/ntp-image.png)
+
+
+
