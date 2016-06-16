@@ -51,4 +51,18 @@
 ![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/ntp-image.png)
 
 
+- **ntpdateコマンド**
+  - 指定したタイムサーバから現在の時刻を取得する
+  - `# ntpdate time.server.hoge.jp`
 
+- NTPサーバの運用
+  - 起動
+    - `# /etc/init.d/ntpd start`
+  - confファイル
+    - `/etc/ntp.conf`
+    - 複数書いておくと、複数のNTPサーバを仮想的なNTPサーバとして運用
+      - ラウンドロビン
+    
+**syslog**
+
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/syslog-image.png)
