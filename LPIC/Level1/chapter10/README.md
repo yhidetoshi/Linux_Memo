@@ -154,3 +154,9 @@ lp                                         **Never logged in**
 |/var/log/wtmp|last|last|
 |/var/run/utmp|who, w|
 |/var/log/lastlog|lastlog|
+
+
+- ログファイルのローテーション
+  - 古くなったログを切り分けて、ログファイルが肥大化するのを防ぐ機能 
+
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/log-lotation.png)
