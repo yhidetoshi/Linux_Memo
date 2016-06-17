@@ -71,7 +71,15 @@
 - syslogの設定
   - `/etc/syslog.conf`
     - **ファシリティ.プライオリティ 出力先** 
+  - (設定例) syslog.conf
+```
+kern.*      /var/log/kernel
+kern.err    @hoge
+kern.err    /dev/console
+*.emerg     *
+```
 
+**[ファシリティ]**
 
 |ファシリティ|説明         |
 |:-----------|:------------|
@@ -83,3 +91,66 @@
 |mail|メールシステムによる出力|
 |syslog|syslog機能による出力|
 |local0〜local7|独自の設定|
+
+**[プライオリティ]**
+
+|プライオリティ|説明         |
+|:-----------|:------------|
+|emerg|危険的な状態|
+|alert|早急に対処が必要|
+|crit|危険な状態|
+|err|一般的なエラー|
+|warning|システムからの警告|
+|notice|システムからの重要な通知|
+|info|システムからの情報|
+|debug|デバッグ情報|
+|none|ファシリティは無効|
+
+**[出力先]**
+
+|表記|説明         |
+|:-----------|:------------|
+|ファイル名|ファイルに出力する|
+|@host名|リモートホストにsyslodに出力する|
+|ユーザ名|ユーザの端末に出力する|
+|/dev/console|コンソールに出力する|
+|*|すべてのユーザの端末に出力する|
+
+
+- **loggerコマンド**
+  -  ログメッセージを生成することができる
+  -  (書式)
+    - `logger [-p ファシリティ.プライオリティ] [-t タグ] メッセージ`  
+      - `$ logger -p syslog.info -t Test "logger test message!"` 
+    - ファシリティがsyslog、プライオリティがinfoであれば、メッセージは`/var/log/messages`に保存される 
+
+- **wコマンド**
+  - ログイン中のユーザとシステム情報も表示される 
+```
+# w
+
+ 22:45:56 up 7 days,  8:19,  2 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+vagrant  tty1     -                01Jun16 16days  0.15s  0.02s login -- vagrant
+vagrant  pts/2    192.168.1.1      01Jun16  0.00s  1.05s  0.01s sshd: vagrant [priv]
+```
+
+- **lastlog**
+  - `/var/log/lastlog`ファイルを参照して、ユーザごとに最近のログイン一覧を表示する
+```
+# lastlog
+Username         Port     From             Latest
+root                                       **Never logged in**
+bin                                        **Never logged in**
+daemon                                     **Never logged in**
+adm                                        **Never logged in**
+lp                                         **Never logged in**
+```
+
+|ログファイル|コマンド         |
+|:-----------|:------------|
+|/var/log/messages|less, tail, grepなど|
+|/var/log/secure|less, tail, grepなど|
+|/var/log/wtmp|last|last|
+|/var/run/utmp|who, w|
+|/var/log/lastlog|lastlog|
