@@ -71,10 +71,16 @@
   - **ローカライゼーションと国際化**
   - 
   
-####    [Chapter10  システム管理(2)](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter9#chapter9--システム管理)
+####    [Chapter10  システム管理(2)](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter10#chapter10--システム管理2)
 - **内容**
   - **システムクロックの設定**
   - **システムログの設定**
   - **メール管理**
   - **プリンタ管理**
   
+
+####    [Chapter11  ネットワークの基礎](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter10#chapter10--システム管理2)
+- **内容**
+  - **TCP/IPの基礎**
+  - **ネットワークの設定**
+  - **ネットワークのトラブルシューティング**
