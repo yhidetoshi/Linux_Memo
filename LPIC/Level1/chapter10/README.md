@@ -158,5 +158,37 @@ lp                                         **Never logged in**
 
 - ログファイルのローテーション
   - 古くなったログを切り分けて、ログファイルが肥大化するのを防ぐ機能 
+    - **logrotateユーティリティ**が提供
+  - (設定)
+    - `/etc/logrotate.conf`ファイル 
+(logrotate.conf)
+```
+#ローテーション周期を1週間
+weekly
+
+#バックアップログを4週間保存
+rotate 4
+
+#ローテーションさせたら、空のログファイルを作成
+create
+
+#ログファイルを圧縮
+compress
+
+#/var/log/wtmpファイルの設定
+/var/log/wtmp {
+  monthly                        ->ローテーション周期を1か月とする
+  create 0664 root utmp          ->パーミッションと所有者の設定
+  create1                        ->バックアップログを1つ保存
+```
 
 ![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/log-lotation.png)
+
+
+
+- メール管理
+  - **MTA(Message Transfer Agent)**
+  - **MDA(Mail Delivery Agent)**
+  - **MUA(Mail User Agent)**
+  
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/mail-flow.png)
