@@ -66,3 +66,20 @@
 **syslog**
 
 ![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/syslog-image.png)
+
+
+- syslogの設定
+  - `/etc/syslog.conf`
+    - **ファシリティ.プライオリティ 出力先** 
+
+
+|ファシリティ|説明         |
+|:-----------|:------------|
+|auth, authpriv|認証システム(loginやsu)による出力|
+|cron|cronによる出力|
+|deamon|各種デーモンによる出力|
+|kern|カーネルによる出力|
+|lpr|印刷システムによる出力|
+|mail|メールシステムによる出力|
+|syslog|syslog機能による出力|
+|local0〜local7|独自の設定|
