@@ -69,7 +69,6 @@
   - **ユーザとグループ管理**
   - **ジョブスケジューリング**
   - **ローカライゼーションと国際化**
-  - 
   
 ####    [Chapter10  システム管理(2)](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter10#chapter10--システム管理2)
 - **内容**
