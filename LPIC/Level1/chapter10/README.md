@@ -192,3 +192,50 @@ compress
   - **MUA(Mail User Agent)**
   
 ![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/mail-flow.png)
+
+
+- **mailコマンド**
+  - `mail [-s 題名] [宛先メールアドレスもしくはユーザ名]`  
+- **mailqコマンド**
+  - 送信待ちのメールはメールキューに蓄えられる 
+
+
+- プリンタの管理
+  - **CUPS(Common Unix Printing Sysytem)** 
+    - 多くのLinuxディストリビューションでは、印刷のサブシステムとしてCUPSを採用 
+  - **IPP(Internet Printer Protocol)**
+    - ネットワーク上のプリンタをサポートするプロトコル。インターネット経由した印刷も可能
+  - **PPD(PostScript Printer Description)**
+    - AdobeのPDF形式ファイルでデバイスドライバの設定ができる
+  - **Webベースで設定可能**
+    - Webブラウザから設定できるツールが組み込まれている
+  - **プリンタクラスのサポート**
+    - 複数のプリンタを1台のプリンタに見せかける機能
+  - cupsの起動
+    - `/etc/init.d/cupsys start`
+
+- **lprコマンド**
+  - lpr [option] [ファイル名]
+
+|オプション|説明    |
+|:-----------|:------------|
+|-# 部数|印刷部数を指定する|
+|-P プリンタ名|印刷を行うプリンタを指定する|
+```
+$lpr -#5 /etc/passwd
+-> /etc/passwdファイルを5部印刷する
+```
+
+- **lpqコマンド**
+  - プリントキューの内容を表示する
+  - `lpq [option] [ユーザ名] [ジョブ番号]`
+
+- **lprmコマンド**
+  - プリントキューにある印刷要求を削除する
+
+|オプション|説明    |
+|:-----------|:------------|
+|-P プリンタ名|プリンタを指定する|
+|- |自分の全印刷ジョブを削除する|
+
+※ rootユーザで実行すると全ユーザの印刷ジョブを削除する
