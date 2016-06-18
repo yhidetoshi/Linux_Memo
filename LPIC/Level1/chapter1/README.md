@@ -19,6 +19,7 @@
 |/proc/scsi/scsi|SCSIデバイスの情報|
 |/proc/dma|使用中のDMAチャネルの情報|
 |/proc/ioports|I/Oアドレスの情報|
+|/proc/cmdline|システム起動時にブートローダからカーネルに渡されたパラメータが確認できるファイル|
 
 
 **[USBデバイスクラス]**
@@ -67,6 +68,8 @@ char             log     network_latency     ram2    sg0       tty16  tty31  tty
   - `lspci`コマンド 
   - `cat /proc/bus/pci/devices`
 
+- カーネルログ
+  - `/var/log/messages` 
  
 - **カーネルモジュールを確認**
   - `lsmod`コマンドを使う
@@ -100,6 +103,7 @@ virtio                  4977  2 virtio_net,virtio_pci
 - システムの起動の流れ(上から下の順で実行される)
   - **BIOS**
     - ハードウェアの初期化
+    - 記憶装置(HDD)等に関して最低限の認識を行う
     - ブートセクタの読み出し
     - ブートローダへ制御を移す
   - **ブートローダ** 
@@ -110,6 +114,12 @@ virtio                  4977  2 virtio_net,virtio_pci
     - initプログラムを実行
   - **init**
     - システムの初期化スクリプトを実行
+    - 設定ファイル「/etc/initab」の記述に基づいて、自動起動するべきプロセスを立ち上げるなど、アプリケーションレベルの初期設定を行う
+    - 最初に起動されるプロセスでPIDは1
+      - Upstartの特徴
+        - サービスやタスクを「ジョブ」単位で扱う
+        - サービスの並列起動処理が可能
+        - イベント駆動型
 
 - システム起動時においてのBIOSの説明
   - MBRを読み込んで、得られたブートローダに制御を移す
@@ -149,7 +159,11 @@ virtio                  4977  2 virtio_net,virtio_pci
 |stop|サービスを停止する|
 |poweroff|システムを停止し電源を切断する|
 
-
+- **systemd**
+  - 管理単位のユニット
+    - swap
+    - mount
+    - device
 
 **[Redhat系]**
 
