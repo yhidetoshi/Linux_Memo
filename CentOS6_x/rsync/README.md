@@ -22,7 +22,8 @@ rsync: connection unexpectedly closed (0 bytes received so far) [receiver]
 rsync error: error in rsync protocol data stream (code 12) at io.c(600) [receiver=3.0.6]
 ```
 
-**[Jaistのftpサーバにrsyncする]**
+
+**[Jaistのftpサーバにrsyncする(CentOS6.8)]**
 
 コマンド：`# rsync -rptv --delete rsync://ftp.jaist.ac.jp/pub/Linux/CentOS/6.8/os/x86_64/ ./test/`
 ```
@@ -46,4 +47,21 @@ GPL
 
 (省略)
 
+```
+
+**[Rikenのftpサーバにrsyncする(CentOS6.7)]**
+
+コマンド：`# rsync -rptv --delete rsync://ftp.riken.jp/Linux/centos/6/os/x86_64/ ./test2/`
+```
+******************************************************
+ftp.riken.jp is an unsupported ftp/http/rsync
+service of RIKEN Nishina Center for research support.
+Use entirely at your own risk - no warranty
+is expressed or implied.
+Complaints and questions should be sent to
+ftp-admin a.t. ftp.riken.jp
+******************************************************
+
+@ERROR: Unknown module 'Linux'
+rsync error: error starting client-server protocol (code 5) at main.c(1503) [receiver=3.0.6]
 ```
