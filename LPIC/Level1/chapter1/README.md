@@ -160,10 +160,24 @@ virtio                  4977  2 virtio_net,virtio_pci
 |poweroff|システムを停止し電源を切断する|
 
 - **systemd**
+  - systemdはSysVinitを置き換える新しいinitの仕組み
   - 管理単位のユニット
-    - swap
-    - mount
-    - device
+  
+|拡張子  |機能         |
+|:-----------|:------------|
+|device|各種デバイスを管理するUnit|
+|mount|ファイルシステムのマウントを管理する|
+|service|サービスを制御するUnit|
+|swap|スワップ領域を管理するUnit|
+|target|複数のサービスを1つのグループにするためのUnit|
+
+|プロセス名  |機能         |
+|:-----------|:------------|
+|systemd|systemdの本体となるプロセスで、initの代わりに常駐する|
+|systemd-journald|systemdが制御する、各サービスが出力するログを扱う|
+|systemd-logind|システムへのログイン、起動停止、電源ボタン操作などを管理する|
+|systemd-udevd|従来のudevdに代わり、デバイスの動的変更、検出を行う|
+
 
 **[Redhat系]**
 
@@ -191,6 +205,19 @@ virtio                  4977  2 virtio_net,virtio_pci
 |5|マルチユーザモード(グラフィカルログイン)|
 |6|再起動|
 |Sまたはs|シングルユーザモード|
+
+
+**[ランレベル、ターゲット]**
+
+`/etc/systemd/system/default.target`
+
+|ランレベル  |説明         |
+|:-----------|:------------|
+|0|poweroff.target|
+|1|rescue.target|
+|2,3,4|multi-user.target|
+|5|graphical.target|
+|6|reboot.target|
 
 
 - シングルユーザモード
