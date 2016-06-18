@@ -49,14 +49,28 @@ char             log     network_latency     ram2    sg0       tty16  tty31  tty
         ..........
 ```
 
+- **D-Bus(Desktop Bus)**
+  - プログラム同士が情報を伝達するプロセス間通信機構の一つ 
+
+- UEFI(Unified Extensible Firmware Interface)
+  - IntelがBIOSを置き換えるために考案したEFIの統一仕様
+  - GUI操作サポート
+  - ファームウェアが使用可能なメモリ量の上限を緩和
+  - BIOSよりも高機能
+
+- **modprode**
+  - 依存関係を考慮してカーネルモジュールをロード、アンロードする 
+
 - USBデバイスの情報を確認
   - `lsusb`コマンド 
 - PCIデバイスの情報を確認
   - `lspci`コマンド 
+  - `cat /proc/bus/pci/devices`
 
  
 - **カーネルモジュールを確認**
-  - `lsmod`コマンドを使う 
+  - `lsmod`コマンドを使う
+  - `cat /proc/modules`
 
 ```
 # lsmod
