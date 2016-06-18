@@ -49,7 +49,21 @@ GPL
 
 ```
 
-**[Rikenのftpサーバにrsyncする(CentOS6.7)]**
+**[NAISTのftpサーバにrsyncする(CentOS6.8)]**
+
+コマンド：`# rsync -rptv --delete rsync://ftp.naist.jp/pub/Linux/centos/6.8/os/x86_64/ ./test2/`
+```
+receiving incremental file list
+./
+.discinfo
+.treeinfo
+CentOS_BuildTag
+EULA
+GPL
+```
+
+
+**[Rikenのftpサーバにrsyncする(CentOS6)]**
 
 コマンド：`# rsync -rptv --delete rsync://ftp.riken.jp/Linux/centos/6/os/x86_64/ ./test2/`
 ```
