@@ -30,6 +30,14 @@
 |ACM Communication Device Class|モデム、TAなど|
 |Audio Class|スピーカー、マイクなど|
 
+**[USBコントローラ、USB規格、モジュール]**
+
+|コントローラー|規格|USBモジュール(カーネル2.4)|USBモジュール(カーネル2.6)|
+|:-----------|:------------|:------------|:------------|
+|UHCI|USB1.1|usb-uhci|uhci-hdc|
+|OHCI|USB1.1|usb-ohci|ohci-hdc|
+|EHCI|USB2.0|サポートしてない|ehci_hcd|
+
 - Linuxはハードウェアへのアクセスを抽象化するデバイスファイルを持っている
 (一部抜粋)
 ```
