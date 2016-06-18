@@ -11,11 +11,14 @@
 
 |ファイル名  |説明         |
 |:-----------|:------------|
-|/proc/bus/usb|USBデバイス情報|
-|/proc/cpuinfo|CPU情報|
+|/proc/bus/devices|USBデバイス情報|
+|/proc/cpuinfo|CPUに関する情報|
+|/proc/meminfo|メモリに関する情報|
 |/proc/interrupts|IRQ情報|
-|/proc/pci|PCIデバイスの情報|
+|/proc/pci/devices|PCIデバイスの情報|
 |/proc/scsi/scsi|SCSIデバイスの情報|
+|/proc/dma|使用中のDMAチャネルの情報|
+|/proc/ioports|I/Oアドレスの情報|
 
 - Linuxはハードウェアへのアクセスを抽象化するデバイスファイルを持っている
 (一部抜粋)
