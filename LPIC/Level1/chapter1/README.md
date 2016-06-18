@@ -20,6 +20,16 @@
 |/proc/dma|使用中のDMAチャネルの情報|
 |/proc/ioports|I/Oアドレスの情報|
 
+
+**[USBデバイスクラス]**
+
+|デバイスクラス  |デバイス         |
+|:-----------|:------------|
+|HID(Human Interface Device)|キーボード、マウスなど|
+|Mass Storage Class|ハードディスク、USBメモリなど|
+|ACM Communication Device Class|モデム、TAなど|
+|Audio Class|スピーカー、マイクなど|
+
 - Linuxはハードウェアへのアクセスを抽象化するデバイスファイルを持っている
 (一部抜粋)
 ```
