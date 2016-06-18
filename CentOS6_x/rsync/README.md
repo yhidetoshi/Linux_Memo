@@ -1,6 +1,12 @@
-#### rsyncしてリポジトリを取得するときのメモ
+### rsyncしてリポジトリを取得するときのメモ
 
-**[IIJのftpサーバにrsyncする]**
+
+- **(参考)rsyncのコマンド等**
+  - CentOS の RPM リポジトリのミラーサーバを構築する`
+    - http://goo.gl/VyB9Y
+
+
+**[IIJのftpサーバにrsyncする(CentOS6.8)]**
 
 コマンド：`# rsync -rptv --delete rsync://ftp.iij.ad.jp/pub/linux/centos/6.8/os/x86_64/ ./test2/`
 ```
@@ -8,6 +14,13 @@ rsync: connection unexpectedly closed (0 bytes received so far) [receiver]
 rsync error: error in rsync protocol data stream (code 12) at io.c(600) [receiver=3.0.6]
 ```
 
+**[IIJのftpサーバにrsyncする(CentOS7.0)]**
+
+コマンド：`# rsync -rptv --delete rsync://ftp.iij.ad.jp/pub/linux/centos/7/os/x86_64/ ./test2/`
+```
+rsync: connection unexpectedly closed (0 bytes received so far) [receiver]
+rsync error: error in rsync protocol data stream (code 12) at io.c(600) [receiver=3.0.6]
+```
 
 **[Jaistのftpサーバにrsyncする]**
 
