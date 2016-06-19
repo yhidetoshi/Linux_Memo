@@ -11,7 +11,7 @@
 
 |ファイル名  |説明         |
 |:-----------|:------------|
-|/proc/bus/devices|USBデバイス情報|
+|/proc/bus/usb/devices|USBデバイス情報|
 |/proc/cpuinfo|CPUに関する情報|
 |/proc/meminfo|メモリに関する情報|
 |/proc/interrupts|IRQ情報|
