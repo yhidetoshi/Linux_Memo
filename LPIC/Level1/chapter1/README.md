@@ -19,6 +19,7 @@
 |/proc/scsi/scsi|SCSIデバイスの情報|
 |/proc/dma|使用中のDMAチャネルの情報|
 |/proc/ioports|I/Oアドレスの情報|
+|/proc/dma|DMAチャンネルに関する情報|
 |/proc/cmdline|システム起動時にブートローダからカーネルに渡されたパラメータが確認できるファイル|
 
 
