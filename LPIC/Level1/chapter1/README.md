@@ -193,6 +193,14 @@ virtio                  4977  2 virtio_net,virtio_pci
 |systemd-logind|システムへのログイン、起動停止、電源ボタン操作などを管理する|
 |systemd-udevd|従来のudevdに代わり、デバイスの動的変更、検出を行う|
 
+|拡張子|機能|
+|:-----------|:------------|
+|device|各種デバイスを管理するUnit|
+|mount|ファイルシステムのマウントを管理するUnit|
+|service|サービスを制御するUnit|
+|swap|スワップ領域を管理するUnit|
+|target|複数サービスを1つのグループにするためのUnit|
+
 
 **[Redhat系]**
 
