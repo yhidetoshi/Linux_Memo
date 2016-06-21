@@ -286,3 +286,43 @@ N 3
 ```
 # shutdown -h 22:00
 ```
+
+システム起動時に最初に実行されるUnitは`/etc/systemd/system/default.target`
+(方法)
+```
+#1 
+ln -s /lib/systemd/system/graphical.target /etc/systemd/system/default.target
+
+#2
+rm -f /etc/systemd/system/default.garget
+```
+
+systemdの動作システムでメンテナンスのためにコマンドをシングルユーザモードで行った状態で通常に戻す
+```
+#1 
+#systemctl defalt
+
+#2
+Ctrl-D
+
+#3
+systemctl reboot
+```
+
+**メンテナンスのために必要最低限で起動**
+```
+rescue.target
+runlevel1.target
+```
+
+- `#systemctl start poweroff.target`
+  - システム終了処理が走る
+  - telinit 0 と同様
+
+- マルチモードで起動しているシステムをシングルモードに変更する
+  - `telinit 1`
+  - `init s`
+  - `telinit S`
+
+- `/etc/inittab`
+  - `Ctrl + alt + del` キーを押した際のシステム動作を設定するファイル
