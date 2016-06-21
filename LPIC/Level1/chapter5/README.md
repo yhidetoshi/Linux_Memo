@@ -45,6 +45,17 @@
   - VG (Volume Group)
   - LV (Logical Volume)
 
+- LVMの特徴
+  - 論理ボリュームを動的にリサイズできる
+  - ボリュームグループは、物理ボリュームを集めて構成された仮想的な領域
+  - スナップショットが取れる
+  - ボリュームグループに後から物理ボリュームを加えることができる
+
+- 論理ボリュームを作成する手順
+1. 物理ボリューム(PV)の作成: `pvcreate`
+2. ボリュームグループ(VG)の作成: `vgcreate`
+3. 論理ボリューム(LV)の作成; `lvcreate`
+
 ![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/Volume.png)
 
 
