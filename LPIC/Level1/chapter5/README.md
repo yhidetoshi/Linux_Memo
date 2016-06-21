@@ -39,6 +39,15 @@
 |/dev/st0|1番目のテープドライブ|
 
 
+- LVM
+  - 物理的な記憶デバイスの領域(物理ボリューム)をまとめ、論理的な一つの大きな記憶デバイス(ボリュームグループ)を作り、それを切り出して仮想的なパーティション(論理ボリューム)を作ることができる 
+  - PV (Physical Volume)LVMにおける物理ボリューム
+  - VG (Volume Group)
+  - LV (Logical Volume)
+
+![Alt Text](https://github.com/yhidetoshi/Pictures/raw/master/Linux_Memo/Volume.png)
+
+
 - パーティション
   - **基本パーティション**
     - ディスクには最大4個の基本パーティションを作成することができる
