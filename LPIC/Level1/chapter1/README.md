@@ -326,3 +326,11 @@ runlevel1.target
 
 - `/etc/inittab`
   - `Ctrl + alt + del` キーを押した際のシステム動作を設定するファイル
+
+- `/etc/inittab`を設定しないinitプログラム
+  - `Upstart`
+  - `systemd`
+
+- メンテナンスのための最低限のサービス状態で起動
+  - `runlevel1.target`
+  - `resucue.target`
