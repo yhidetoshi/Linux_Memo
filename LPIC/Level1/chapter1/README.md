@@ -244,7 +244,7 @@ virtio                  4977  2 virtio_net,virtio_pci
 |2,3,4|multi-user.target|
 |5|graphical.target|
 |6|reboot.target|
-
+(ターゲット名は.targetを省略することができる)
 
 - シングルユーザモード
   - rootユーザだけが利用できる状態
