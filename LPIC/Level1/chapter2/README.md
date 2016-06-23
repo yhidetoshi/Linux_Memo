@@ -25,6 +25,7 @@
     - **GRUB**
     - **LILO**
 
+- 第一段階のブートローダは通常MBR(マスターブートレコード)に格納される
 
 - **GRUB**
   - 多機能ブートローダ
@@ -67,6 +68,7 @@ title CentOS (2.6.32-431.3.1.el6.x86_64)
 	kernel /boot/vmlinuz-2.6.32-431.3.1.el6.x86_64 ro root=UUID=1d798f26-8ace-413f-9530-2d1d1d4fdbb5 rd_NO_LUKS  KEYBOARDTYPE=pc KEYTABLE=us LANG=en_US.UTF-8 clocksource_failover=acpi_pm rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto rd_NO_LVM rd_NO_DM
 	initrd /boot/initramfs-2.6.32-431.3.1.el6.x86_64.img
 ```
+**GRUM Legacy(GRUB1)の場合**
 
 |表記|説明         
 |:-----------|:------------|
@@ -74,11 +76,24 @@ title CentOS (2.6.32-431.3.1.el6.x86_64)
 |root(hd0,1)|1番目のディスクの2番目のパーティション|
 |root(hd1,1)|2番目のディスクの2番目のパーティション|
 
+- GRUB Legacyの設定ファイル
+  - `/boot/grub/grub.conf`
+  - `/boot/grub/menu.lst`
+
 - grub2
   - 設定ファイル：`/boot/grub/grub.cfg`
   - 直接設定ファイルを編集することはない
   - `/etc/default/grub`ファイル及び`/etc/grub.d`ディレクトリ内のファイルに記述
   - `# grub-mkconfig`で設定内容を`/boot/grub/grub.cfg`ファイルに反映させる
+
+**GRUM Legacy(GRUB2)の場合**
+
+|表記|説明         
+|:-----------|:------------|
+|root(hd0,1)|1番目のディスクの1番目のパーティション|
+|root(hd0,2)|1番目のディスクの2番目のパーティション|
+|root(hd1,3)|2番目のディスクの3番目のパーティション|
+
 
 - **LILO**
   - Intelアーキテクチャ用のブローダ
