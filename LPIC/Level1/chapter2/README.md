@@ -32,6 +32,12 @@
     - シェル機能を搭載し、コマンドによる高度な管理が可能
     - `grub-install`コマンド
 
+**GRUB Legacyの場合**
+
+`grub> kernel カーネルイメージ[option]`
+
+**GRUB2の場合**
+
 `grub > linux カーネルイメージ[option]`
 
 |起動オプション|説明         
@@ -52,6 +58,7 @@
 
 `# cat /boot/grub/menu.lst`
 ```
+#boot=/dev/sda
 default=0
 timeout=0
 hiddenmenu
@@ -60,6 +67,18 @@ title CentOS (2.6.32-431.3.1.el6.x86_64)
 	kernel /boot/vmlinuz-2.6.32-431.3.1.el6.x86_64 ro root=UUID=1d798f26-8ace-413f-9530-2d1d1d4fdbb5 rd_NO_LUKS  KEYBOARDTYPE=pc KEYTABLE=us LANG=en_US.UTF-8 clocksource_failover=acpi_pm rd_NO_MD SYSFONT=latarcyrheb-sun16 crashkernel=auto rd_NO_LVM rd_NO_DM
 	initrd /boot/initramfs-2.6.32-431.3.1.el6.x86_64.img
 ```
+
+|表記|説明         
+|:-----------|:------------|
+|root(hd0,0)|1番目のディスクの1番目のパーティション|
+|root(hd0,1)|1番目のディスクの2番目のパーティション|
+|root(hd1,1)|2番目のディスクの2番目のパーティション|
+
+- grub2
+  - 設定ファイル：`/boot/grub/grub.cfg`
+  - 直接設定ファイルを編集することはない
+  - `/etc/default/grub`ファイル及び`/etc/grub.d`ディレクトリ内のファイルに記述
+  - `# grub-mkconfig`で設定内容を`/boot/grub/grub.cfg`ファイルに反映させる
 
 - **LILO**
   - Intelアーキテクチャ用のブローダ
