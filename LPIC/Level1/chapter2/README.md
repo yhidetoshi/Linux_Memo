@@ -115,8 +115,10 @@ title CentOS (2.6.32-431.3.1.el6.x86_64)
   - `/etc/ld.so.conf`ファイルに記述する
   - 実際にはバイナリのキャッシュファイルが参照される
     - `/etc/ld.so.cache`
-  - `ldconfig`コマンドは`/etc/ld.so.conf`ファイルに基づいて、`/etc/ld.so.cache`(プログラム実行時に共有ライブラリの場所を検索するためにしようされる)を再構築する
+  - `ldconfig`コマンドは`/etc/ld.so.conf`ファイルに基づいて、`/etc/ld.so.cache`(プログラム実行時に共有ライブラリの場所を検索するためにしようされる)
+  - `ldconfig` 共有ライブラリのキャッシュファイル`/etc/ld.so.cache`を更新する
   - その他のディレクトリも検索対象に加えたい場合は`環境変数 LD_LIBRARY_PATH`に記述する
+  - `ldd /bin/bash` : 「/bin/bash」を実行する時に必要となる共有ライブラリを調べる
   
 
 **ディレクトリのまとめ**
