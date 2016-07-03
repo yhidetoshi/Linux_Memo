@@ -16,7 +16,7 @@
   - **RPMパッケージの管理**
 
 
-####    Chapter3 GNU & UNIXコマンド
+####    [Chapter3 Chapter3 GNU & UNIXコマンド](https://github.com/yhidetoshi/Linux_Memo/tree/master/LPIC/Level1/chapter3#chapter3-gnu--unixコマンド)
 - **内容**
   - **コマンドライン操作**
   - **パイプとリダイレクトr**
