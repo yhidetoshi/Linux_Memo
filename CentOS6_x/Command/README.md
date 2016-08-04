@@ -119,7 +119,10 @@ openssl passwd -1 '<hash化したい文字列>
 
   - repoの無効化 : `sed -i -e "s/enabled *= *1/enabled=0/g" /etc/yum.repos.d/epel.repo`
 
-
-
+#### sudo コマンド
+一般ユーザがパスワードなしでsudo実行
+```
+user_name  ALL=(ALL)       NOPASSWD:ALL
+```
 
 
