@@ -126,3 +126,12 @@ user_name  ALL=(ALL)       NOPASSWD:ALL
 ```
 
 
+- 環境変数の確認
+`$ echo $PATH`
+
+もし表示結果に/usr/local/binがなければ追加する
+
+環境変数にパスを追加
+`$ echo export PATH='/usr/local/bin:$PATH' >> ~/.bash_profile`
+export PATH=/usr/local/bin:$PATHをUser/ユーザー名/.bash_profileに書き込んでいる。
+
