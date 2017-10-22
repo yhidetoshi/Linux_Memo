@@ -135,3 +135,13 @@ user_name  ALL=(ALL)       NOPASSWD:ALL
 `$ echo export PATH='/usr/local/bin:$PATH' >> ~/.bash_profile`
 export PATH=/usr/local/bin:$PATHをUser/ユーザー名/.bash_profileに書き込んでいる。
 
+### netcat
+Linuxでポートの疎通確認を行う際によく用いるncコマンド。
+```
+usage: nc [-46bCDdhjklnrStUuvZz] [-I length] [-i interval] [-O length]
+[-P proxy_username] [-p source_port] [-q seconds] [-s source]
+[-T toskeyword] [-V rtable] [-w timeout] [-X proxy_protocol]
+[-x proxy_address[:port]] [destination] [port]
+```
+
+`$ nc -v -w 1 target -z <port>`
