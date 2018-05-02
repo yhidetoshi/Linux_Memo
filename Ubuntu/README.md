@@ -1,6 +1,6 @@
 # README (Ubuntu勉強用)
 
-##### Ubuntuのバージョン確認
+#### Ubuntuのバージョン確認
 - `# cat /etc/os-release`
 ```
 NAME="Ubuntu"
@@ -10,7 +10,7 @@ ID_LIKE=debian
 PRETTY_NAME="Ubuntu 16.04.4 LTS"
 ```
 
-##### Nginx install
+#### Nginx install
 
 ```
 $ curl http://nginx.org/keys/nginx_signing.key | sudo apt-key add -
