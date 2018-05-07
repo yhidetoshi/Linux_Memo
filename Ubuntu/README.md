@@ -43,35 +43,17 @@ $ sudo apt-get install nginx
   - Ubuntu
 
 #### AppArmorの確認・無効化
-- `# apparmor_status`
-```
-apparmor module is loaded.
-14 profiles are loaded.
-14 profiles are in enforce mode.
-   /sbin/dhclient
-   /usr/bin/lxc-start
-   /usr/lib/NetworkManager/nm-dhcp-client.action
-   /usr/lib/NetworkManager/nm-dhcp-helper
-   /usr/lib/connman/scripts/dhclient-script
-   /usr/lib/lxd/lxd-bridge-proxy
-   /usr/lib/snapd/snap-confine
-   /usr/lib/snapd/snap-confine//mount-namespace-capture-helper
-   /usr/lib/snapd/snap-confine//snap_update_ns
-   /usr/sbin/tcpdump
-   lxc-container-default
-   lxc-container-default-cgns
-   lxc-container-default-with-mounting
-   lxc-container-default-with-nesting
-0 profiles are in complain mode.
-1 processes have profiles defined.
-1 processes are in enforce mode.
-   /sbin/dhclient (922)
-0 processes are in complain mode.
-0 processes are unconfined but have a profile defined.
-```
+- 確認コマンド
+  - `# apparmor_status`
 - 無効化
   - `vi /etc/default/grub`
     - `GRUB_CMDLINE_LINUX="apparmor=0"`
   - `# update-grub`
-  - 
-  
+  - `# reboot`
+
+- # apparmor_status
+  - 以下が表示される
+```
+apparmor module is loaded.
+apparmor filesystem is not mounted
+```
