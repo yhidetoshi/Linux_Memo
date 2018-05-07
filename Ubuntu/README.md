@@ -69,3 +69,9 @@ apparmor module is loaded.
 0 processes are in complain mode.
 0 processes are unconfined but have a profile defined.
 ```
+- 無効化
+  - `vi /etc/default/grub`
+    - `GRUB_CMDLINE_LINUX="apparmor=0"`
+  - `# update-grub`
+  - 
+  
