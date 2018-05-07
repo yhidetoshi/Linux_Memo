@@ -50,8 +50,7 @@ $ sudo apt-get install nginx
     - `GRUB_CMDLINE_LINUX="apparmor=0"`
   - `# update-grub`
   - `# reboot`
-
-- # apparmor_status
+- `# apparmor_status`
   - 以下が表示される
 ```
 apparmor module is loaded.
