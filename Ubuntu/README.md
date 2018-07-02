@@ -14,7 +14,7 @@ PRETTY_NAME="Ubuntu 16.04.4 LTS"
 - apt-get install zsh oh-my-zsh
 
 - pecoをインストール
-  - `(sudo wget "https://github.com/peco/peco/releases/download/v0.5.2/peco_linux_386.tar.gz)"`
+  - `sudo wget "https://github.com/peco/peco/releases/download/v0.5.2/peco_linux_386.tar.gz"`
   - ~/bin/配下にbinaryをセットして +xする
   - .zshで~${HOME}にパスを通す
     - `export PATH=/usr/bin/usr/local/bin/${HOME}/bin:$PATH`
