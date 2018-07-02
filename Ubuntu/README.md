@@ -11,7 +11,8 @@ PRETTY_NAME="Ubuntu 16.04.4 LTS"
 ```
 ### Ubuntuのセットアップ
 
-- apt-get install zsh oh-my-zsh
+- `apt-get install zsh`
+- `wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh`
 
 - pecoをインストール
   - `sudo wget "https://github.com/peco/peco/releases/download/v0.5.2/peco_linux_386.tar.gz"`
